@@ -131,15 +131,13 @@ console.log('Numero random: ' + numeroRandom());
 
 let x = 10;
 
-// Pasamos el valor de x = 10;
 function modificarValor(num) {
     num = num * 2;
-    console.log("Dentro de la función:", num);
+    console.log("Dentro de la función:", num); // 20
 }
 
 modificarValor(x);
-// x seguira valiendo 10 fuera de la funcion.
-console.log("Fuera de la función:", x);
+console.log("Fuera de la función:", x); // 10
 
 /*******************************************************************/
 
@@ -157,12 +155,12 @@ let usuario = { nombre: "Juan", edad: 25 };
 function modificarObjeto(persona) {
     persona.nombre = 'Claudio',
         persona.edad = 30;
-    console.log("Dentro de la función:", persona);
+    console.log("Dentro de la función:", persona); // { nombre: 'Claudio', edad: 30 }
 }
 
 
 modificarObjeto(usuario);
-console.log("Fuera de la función:", usuario);
+console.log("Fuera de la función:", usuario); // { nombre: 'Claudio', edad: 30 }
 
 /*******************************************************************/
 
@@ -171,10 +169,10 @@ let frutas = ['Manzana', 'Pera', 'Naranja'];
 function modificaCanasta(canasta) {
     canasta[0] = 'Melon',
         canasta[1] = 'Lechuga'
-    console.log(canasta);
+    console.log(canasta); // [ 'Melon', 'Lechuga', 'Naranja' ]
 }
 
 modificaCanasta(frutas);
-console.log(frutas);
+console.log(frutas); // [ 'Melon', 'Lechuga', 'Naranja' ]
 
 
